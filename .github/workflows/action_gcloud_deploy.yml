@@ -15,5 +15,6 @@ jobs:
         with:
           repository: GermanZun/unisalud_fork
           path: unisalud
+      - run: cd unisalud && composer install
       - run: |
           ls ${{ github.workspace }}/unisalud

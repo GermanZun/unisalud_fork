@@ -10,3 +10,10 @@ jobs:
     steps:
       - name: Check PHP Version
         run: php -v
+      - run: mkdir unisalud
+      - uses: actions/checkout@v2
+        with:
+          repository: GermanZun/unisalud_fork
+          path: unisalud
+      - run: |
+          ls ${{ github.workspace }}/unisalud
